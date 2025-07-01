@@ -38,16 +38,27 @@
     </div>
 
     <!-- Lado derecho: texto -->
-    <div class="about-text">
-      <p>
-        Soy desarrolladora web con formación en Desarrollo de Aplicaciones Web (DAW).
-        Me encanta aprender cosas nuevas, programar interfaces bonitas y funcionales, y trabajar en equipo.
-      </p>
-      <p>
-        En mi tiempo libre disfruto dibujar, explorar herramientas creativas y mejorar mis habilidades técnicas.
-      </p>
-    </div>
+   <div class="about-text">
+  <p>
+    Hola, soy <span class="highlight1">Míriam</span>, <strong>desarrolladora web en <em>formación</em></strong> con un gran interés por el 
+    <span class="highlight1">diseño</span>, la <span class="highlight1">programación</span> y las 
+    <span class="highlight1">tecnologías digitales</span>.
+  </p>
+
+  <p>
+    Con formación previa en <strong>Pedagogía</strong> y un <strong>máster en Recursos Humanos</strong>, he desarrollado mi carrera 
+    en el ámbito administrativo. Sin embargo, mi <span class="highlight1">pasión por la informática</span> —presente desde que era pequeña— 
+    me ha llevado a <strong>redireccionar mi camino profesional</strong> hacia el sector tecnológico, donde actualmente 
+    curso <em>Desarrollo de Aplicaciones Web (DAW)</em> en la Universitat Oberta de Catalunya (UOC).
+  </p>
+
+  <div class="resaltado">
+    💡 Me defino como una persona <strong>creativa</strong>, <strong>curiosa</strong> y <strong>persistente</strong>, con un gran interés 
+    por el <em>aprendizaje constante</em> y la <em>resolución de problemas</em>.
   </div>
+</div>
+  </div>
+
 </section>
 
 <section id="skills" class="section scroll-fade">
@@ -251,7 +262,46 @@ onMounted(() => {
   color: #111;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
 }
+.highlight1 {
+  position: relative;
+  color: #f0c742;
+  font-weight: 600;
+  cursor: default;
+  transition: color 0.3s ease;
+}
 
+.highlight1::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #f0c742, #fff7b2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.highlight1:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #f0c742;
+}
+
+.highlight1:hover::after {
+  transform: scaleX(1);
+}
+
+
+.resaltado {
+  background-color: #1a1a1a;
+  border-left: 5px solid #f0c742;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 12px;
+  color: #fff;
+  font-style: italic;
+}
 
 
 
@@ -476,6 +526,7 @@ onMounted(() => {
   font-family: 'Segoe UI', sans-serif;
    
 }
+
 
 .about-text {
   flex: 2;
