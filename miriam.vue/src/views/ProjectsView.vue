@@ -68,9 +68,10 @@ onMounted(() => {
           <img :src="project.image" :alt="project.title" class="project-img" />
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
-          <a :href="project.link" class="btn">
-            🔗 Ver proyecto
-          </a>
+          <router-link :to="project.link" class="btn">
+          🔗 Ver proyecto
+        </router-link>
+
         </div>
       </div>
     </section>
