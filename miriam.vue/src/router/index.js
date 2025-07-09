@@ -5,9 +5,10 @@ import Curriculum from '@/views/Curriculum.vue'
 import Fullscat from '../views/projects/fullscat.vue';
 import Javalinos from '../views/projects/javalinos.vue';
 import NewTitans from '../views/projects/newtitans.vue';
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHashHistory(),  
+  history: createWebHashHistory(), 
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/projects', name: 'projects', component: ProjectsView },
