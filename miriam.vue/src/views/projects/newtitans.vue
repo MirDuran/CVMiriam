@@ -88,7 +88,7 @@ import imagen from '@/assets/nw2.PNG';
                 </div>
 
                     <p>  
-                        <div class="tech-used2">🛠️ Tecnologías utilizadas: PHP, MySQL, Docker, AWS, HTML5, CSS,...</div>
+                        <div class="tech-used2">🛠️ Tecnologías utilizadas: PHP, MySQL, Docker, AWS, HTML5, phpMyAdmin, CSS,...</div>
                     </p>  
         
                     <a href="https://github.com/MirDuran/PHP_IslaTransfer" target="_blank" rel="noopener noreferrer" class="github-link">
@@ -107,10 +107,10 @@ import imagen from '@/assets/nw2.PNG';
                     Definí las <strong>rutas web</strong> y apliqué <strong>middleware</strong> personalizados para proteger accesos según el tipo de usuario (viajero, corporativo o administrador). También configuré <strong>sesiones</strong> y realicé validaciones de formularios tanto del lado del servidor como en las vistas, mostrando mensajes de error claros.
                 </p>
                 <p>
-                    Para la seguridad, apliqué protección automática contra <strong>CSRF</strong>, usé <strong>bcrypt</strong> para el hashing de contraseñas y configuré <strong>guards</strong> específicos para cada tipo de usuario. Además, implementé <strong>almacenamiento en caché</strong> para mejorar el rendimiento, <strong>Monolog</strong> para la gestión de logs, y generación de respuestas en <strong>JSON</strong> para futuras integraciones con APIs.
+                    Para la seguridad, apliqué protección automática contra <code>CSRF</code>, <code>bcrypt</code> para el hashing de contraseñas y configuré <strong>guards</strong> específicos para cada tipo de usuario. Además, implementé <strong>almacenamiento en caché</strong> para mejorar el rendimiento, <strong>Monolog</strong> para la gestión de logs, y generación de respuestas en <strong>JSON</strong> para futuras integraciones con APIs.
                 </p>
                 <p>
-                    También utilicé herramientas como <strong>Str::random</strong> para generar identificadores únicos, y diseñé el sistema teniendo en cuenta la escalabilidad, reutilización de código y facilidad de extensión.
+                    También utilicé herramientas como <code>Str::random</code> para generar identificadores únicos, y diseñé el sistema teniendo en cuenta la escalabilidad, reutilización de código y facilidad de extensión.
                 </p>
             </section>
                     <div class="box-style2">
@@ -125,24 +125,46 @@ import imagen from '@/assets/nw2.PNG';
               </div>
               
                     <p>  
-                        <div class="tech-used2">🛠️ Tecnologías utilizadas: Laravel, MySQL, Docker, AWS, HTML5, CSS,...</div>
+                        <div class="tech-used2">🛠️ Tecnologías utilizadas: Laravel, MySQL, Docker, AWS, phpMyAdmin, HTML5, CSS,...</div>
                     </p>  
         
-                    <a href="https://github.com/MirDuran/PHP_IslaTransfer" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <a href="https://github.com/MirDuran/Laravel_islatransfera" target="_blank" rel="noopener noreferrer" class="github-link">
                         Enlace a GitHub (Laravel)
                     </a>
 
-                <hr class="section-separator" />  
-              <h3>Implementación FullStack:</h3>
-              <p>
-                En esta fase, combino el frontend y el backend en una única solución. Además, se integrarán APIs de comunicación asíncrona entre el cliente y el servidor. Mediante el uso de <strong>Fetch</strong> y <strong>WebSockets</strong>, los usuarios podrán registrar su disponibilidad para ofrecer voluntariado (por ejemplo, acompañar a una persona mayor a caminar) y ver, en tiempo real, quién está interesado en recibir o prestar estos servicios voluntarios.
-             </p>
+                <hr class="section-separator" />
+                <section class="project-details">
+              <h2>3. Creación de una web institucional donde se muestran los servicios realizados</h2>
+                <h3>WordPress</h3>
+                <p>
+                    En este proyecto utilicé <strong>WordPress</strong>, un sistema de gestión de contenidos desarrollado en <strong>PHP</strong>, el cual desplegué mediante <strong>Docker Compose</strong>. Esto me permitió orquestar de forma sencilla los distintos servicios del sistema: <strong>WordPress</strong>, <strong>MySQL</strong> y <strong>phpMyAdmin</strong>, facilitando la configuración y el despliegue local en un entorno controlado.
+                </p>
+                <p>
+                    Implementé la estructura del sitio utilizando <strong>bloques personalizados</strong> en el editor <strong>Gutenberg</strong>, y diseñé un <strong>tema propio</strong> desde cero con el plugin <code>Create Block Theme</code>. Gracias a esto, pude definir el aspecto visual, adaptar el sitio a dispositivos móviles y mantener la coherencia en estilos y estructura a través de <strong>CSS</strong> personalizado.
+                </p>
+                <p>
+                    Desarrollé un <strong>bloque dinámico</strong> usando <code>Genesis Custom Blocks</code> que realiza peticiones a una <strong>API externa en Laravel</strong> (Producto 3), mostrando de forma automática los servicios ofrecidos como traslados VIP o eventos. Esto garantiza que el contenido esté siempre actualizado, manteniendo la separación entre <strong>backend y frontend</strong>.
+                </p>
+                <p>
+                    Además, configuré un entorno persistente con <strong>volúmenes Docker</strong>, permitiendo editar archivos desde el host y ver los cambios reflejados en tiempo real. También se generaron <strong>respuestas en JSON</strong> para facilitar la futura integración con <strong>JavaScript</strong> u otras APIs, y utilicé funciones como <code>Str::random</code> para crear identificadores únicos en bloques dinámicos.
+                </p>
+            </section>  
+              <div class="box-style2">
+                    <h3>Creación de una web institucional con Wordpress</h3>
+                    <iframe width="100%" height="315"
+                    src="https://www.youtube.com/embed/xYCjyXlK0eo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+              </div>
           
-               <p>  <div class="tech-used2">🛠️ Tecnologías utilizadas: PHP, MySQL, Docker, AWS, CSS,...</div>
+               <p>  <div class="tech-used2">🛠️ Tecnologías utilizadas: WordPress, PHP, MySQL, Docker, phpMyAdmin, Genesis Custom Blocks, CSS, JavaScript, AWS</div>
                  </p>  
         
-                <a href="https://github.com/MirDuran/Fullstack" target="_blank" rel="noopener noreferrer" class="github-link">
-                    Enlace a GitHub
+                <a href="https://github.com/MirDuran/Wordpress" target="_blank" rel="noopener noreferrer" class="github-link">
+                    Enlace a GitHub (WordPress)
                 </a>
 
                 

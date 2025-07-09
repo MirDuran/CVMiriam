@@ -100,6 +100,7 @@ import '@/assets/styles/projects.css';
         <a href="https://github.com/MirDuran/Online-Store" target="_blank" rel="noopener noreferrer" class="github-link">
             Enlace a GitHub
         </a>
+        
     </main>
 
     <footer class="footer scroll-fade">
@@ -275,7 +276,7 @@ import '@/assets/styles/projects.css';
   color: #eee;
   font-size: 1.05rem;
   line-height: 1.7;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; 
 }
 
 .project-details p {
@@ -307,7 +308,6 @@ import '@/assets/styles/projects.css';
 }
 
 .github-link {
-  display: inline-block;
   background-color: #f0c742;
   color: #000;
   font-weight: 700;
@@ -329,12 +329,7 @@ import '@/assets/styles/projects.css';
   color: #000;
 }
 
-.footer {
-  text-align: center;
-  color: #888;
-  margin-top: 4rem;
-  font-size: 0.9rem;
-}
+
 
 
 /* Responsive */
