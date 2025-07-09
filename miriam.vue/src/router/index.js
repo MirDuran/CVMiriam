@@ -7,7 +7,7 @@ import Javalinos from '../views/projects/javalinos.vue'
 import NewTitans from '../views/projects/newtitans.vue'
 
 const router = createRouter({
-  history: createWebHashHistory('/CVMiriam/'),
+  history: createWebHashHistory(),  
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/projects', name: 'projects', component: ProjectsView },
@@ -17,5 +17,4 @@ const router = createRouter({
     { path: '/projects/newtitans', name: 'newtitans', component: NewTitans },
   ],
 })
-
 export default router
