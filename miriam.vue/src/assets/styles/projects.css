@@ -1,0 +1,139 @@
+
+
+.section.projects {
+  background-color: transparent; 
+  color: #eee;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f0c742;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #f0c742;
+  margin: 0.75rem auto 0;
+  border-radius: 9999px;
+  box-shadow: 0 0 15px rgba(240, 199, 66, 0.7);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.project-card {
+  border-radius: 20px;
+  padding: 2rem 1.8rem;
+  color: #222;
+  background: linear-gradient(145deg, #f9f1c8, #e4c04b);
+  box-shadow:
+    4px 4px 12px rgba(184, 134, 11, 0.35),
+    -4px -4px 12px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.project-card:nth-child(odd) {
+  background: #222;
+  color: #f0c742;
+  box-shadow:
+    4px 4px 12px rgba(0, 0, 0, 0.9),
+    -4px -4px 12px rgba(58, 58, 58, 0.6);
+}
+
+.project-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow:
+    0 0 30px #f0c742cc,
+    0 0 50px #f0c742bb,
+    0 0 60px #ffd700cc;
+}
+
+.project-card:nth-child(odd):hover {
+  box-shadow:
+    0 0 20px #f0c742bb,
+    0 0 40px #f0c742aa,
+    0 0 50px #ffd700aa;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
+  box-shadow:
+    0 0 15px rgba(212, 175, 55, 0.5),
+    0 0 5px rgba(255, 255, 255, 0.1);
+  transition: filter 0.3s ease;
+}
+
+.project-img:hover {
+  filter: brightness(1.1);
+}
+
+h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  color: inherit;
+  font-weight: 500;
+}
+
+.project-card a.btn {
+  background-color: transparent;
+  border: 2px solid currentColor;
+  color: inherit;
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.project-card a.btn:hover {
+  background-color: #f0c742;
+  color: #222;
+  box-shadow:
+    0 0 12px #f0c742,
+    0 0 25px #f0c742bb;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    padding: 1.5rem 1rem;
+  }
+}
