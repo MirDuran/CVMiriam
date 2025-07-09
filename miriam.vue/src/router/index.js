@@ -2,10 +2,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import Curriculum from '@/views/Curriculum.vue'
-import Fullscat from '../views/projects/fullscat.vue';
-import Javalinos from '../views/projects/javalinos.vue';
-import NewTitans from '../views/projects/newtitans.vue';
-
+import Fullscat from '../views/projects/fullscat.vue'
+import Javalinos from '../views/projects/javalinos.vue'
+import NewTitans from '../views/projects/newtitans.vue'
 
 const router = createRouter({
   history: createWebHashHistory('/CVMiriam/'),
