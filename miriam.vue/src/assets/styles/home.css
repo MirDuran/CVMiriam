@@ -93,30 +93,39 @@
   color: white;
   font-weight: 600;
   text-decoration: none;
-  border: 2px solid white;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #f0c742;
+  border-radius: 30px;
+  box-shadow:
+    0 0 5px #f0c742,
+    0 0 10px #fffbe455;
+  background-color: rgba(240, 184, 29, 0.767);
   backdrop-filter: blur(2px);
+  transition: all 0.3s ease;
 }
 
 .hero-links a:hover {
-  background-color: white;
-  color: #cf2b85;
+  background-color: #f0c742;
+  color: #000;
+  text-shadow: none;
+  box-shadow:
+    0 0 10px #ffffffcc,
+    0 0 20px #ecda73aa,
+    0 0 30px #ffd70077;
 }
 
 .highlight {
   font-family: 'DM Serif Display', serif;
   font-weight: 700;
   font-size: 3.5rem;
-  color: #111;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+  color: #f8f6ee;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .highlight1 {
   position: relative;
   color: #f0c742;
+  
   font-weight: 600;
   cursor: default;
   transition: color 0.3s ease;
@@ -154,30 +163,7 @@
   font-style: italic;
 }
 
-.hero-links a {
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  text-decoration: none;
-  padding: 0.6rem 1.4rem;
-  border: 2px solid #ffffff;
-  border-radius: 30px;
-  background-color: transparent;
-  text-shadow: 0 0 5px #fff;
-  box-shadow:
-    0 0 5px #ffd70088,
-    0 0 10px #ffd70055;
-  transition: all 0.3s ease;
-}
 
-.hero-links a:hover {
-  background-color: #ffd9009a;
-  color: #000;
-  text-shadow: none;
-  box-shadow:
-    0 0 10px #ffffffcc,
-    0 0 20px #ecda73aa,
-    0 0 30px #ffd70077;
-}
 
 /* SECCIONES */
 .section {
