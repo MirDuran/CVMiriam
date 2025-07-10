@@ -38,7 +38,6 @@ onMounted(() => {
           <a href="#skills">Habilidades</a>
           <a href="#contact">Contacto</a>
 
-
         </div>
       </main>
     </div>
@@ -129,6 +128,8 @@ onMounted(() => {
 
     <div class="contact-card">
       <div class="icon-circle">
+        <img src="@/assets/pngwing.com.png" alt="Telefono" />
+
      </div>
       <div class="contact-info">
         <span class="contact-label">Teléfono</span>
@@ -140,7 +141,7 @@ onMounted(() => {
 
 
     <footer class="footer scroll-fade">
-      <p>© 2024 Miriam Durán Reyes. Todos los derechos reservados.</p>
+      <p>© 2025 Miriam Durán Reyes. Todos los derechos reservados.</p>
     </footer>
   </div>
 </template>
