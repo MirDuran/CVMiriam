@@ -37,6 +37,8 @@ onMounted(() => {
           <a href="#about">Sobre mí</a>
           <a href="#skills">Habilidades</a>
           <a href="#contact">Contacto</a>
+
+
         </div>
       </main>
     </div>
@@ -100,33 +102,42 @@ onMounted(() => {
         </div>
       </div>
     </section>
-
-    <section id="contact" class="section scroll-fade">
-      <h2>Contacto</h2>
-      <div class="contact-wrapper">
-        <div class="contact-card">
-          <div class="icon-circle">
-            <img src="@/assets/gmail.svg" alt="Gmail" />
-          </div>
-          <div class="contact-info">
-            <span class="contact-label">Correo</span>
-            <a href="mailto:miriam.duranreyes@gmail.com">miriam.duranreyes@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="icon-circle">
-            <img src="@/assets/linkedin.svg" alt="LinkedIn" />
-          </div>
-          <div class="contact-info">
-            <span class="contact-label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/miriam-duran-reyes-6a1668101/" target="_blank" rel="noopener noreferrer">
-              Miriam Durán Reyes
-            </a>
-          </div>
-        </div>
+<section id="contact" class="section scroll-fade">
+  <h2>Contacto</h2>
+  <div class="contact-wrapper">
+    <div class="contact-card">
+      <div class="icon-circle">
+        <img src="@/assets/gmail.svg" alt="Gmail" />
       </div>
-    </section>
+      <div class="contact-info">
+        <span class="contact-label">Correo</span>
+        <a href="mailto:miriam.duranreyes@gmail.com">miriam.duranreyes@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-circle">
+        <img src="@/assets/linkedin.svg" alt="LinkedIn" />
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/miriam-duran-reyes-6a1668101/" target="_blank" rel="noopener noreferrer">
+          Miriam Durán Reyes
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-circle">
+     </div>
+      <div class="contact-info">
+        <span class="contact-label">Teléfono</span>
+        <a href="tel:+34123456789">+34 609 863 720</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <footer class="footer scroll-fade">
       <p>© 2024 Miriam Durán Reyes. Todos los derechos reservados.</p>

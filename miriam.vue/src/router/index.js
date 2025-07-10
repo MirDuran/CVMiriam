@@ -6,6 +6,7 @@ import Fullscat from '../views/projects/fullscat.vue'
 import Javalinos from '../views/projects/javalinos.vue'
 import NewTitans from '../views/projects/newtitans.vue'
 
+
 const router = createRouter({
   history: createWebHashHistory(),  
   routes: [
@@ -15,6 +16,18 @@ const router = createRouter({
     { path: '/projects/fullscat', name: 'fullscat', component: Fullscat },
     { path: '/projects/javalinos', name: 'javalinos', component: Javalinos },
     { path: '/projects/newtitans', name: 'newtitans', component: NewTitans },
-  ],
+   ],
+   scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  }
 })
 export default router

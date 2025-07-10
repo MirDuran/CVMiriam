@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* HERO SECTION */
 .hero {
   width: 100vw;
