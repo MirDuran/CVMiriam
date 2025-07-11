@@ -128,6 +128,14 @@ p {
     0 0 25px #f0c742bb;
 }
 
+.project-type {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 /* Responsive tweaks */
 @media (max-width: 480px) {
   .projects-grid {

@@ -9,19 +9,22 @@ import jv1 from '@/assets/jv1.PNG';
 const projects = [
   {
     title: 'Fullscat',
-    description: 'Descripción del proyecto Fullscat.',
+    description: 'Proyecto sobre voluntariado para personas mayores.',
+    type: 'Full Stack (Frontend + Backend + comunicación en tiempo real)',    
     image: fc1,
     link: '/projects/fullscat',
   },
   {
     title: 'Online Store',
-    description: 'Descripción del proyecto Javalinos.',
+    description: 'Tienda interna para gestión de clientes, articulos y pedidos con CRUD.',
+    type: 'Backend con Java + MySQL (JavaFX, sin frontend web)',
     image: jv1,
     link: '/projects/javalinos',
   },
   {
     title: 'Isla Transfers',
-    description: 'Descripción del proyecto New Titans.',
+    description: 'Empresa de transporte ficticia con presentación visual y navegación.',
+    type: 'Backend con enfoque visual (PHP + Laravel)',
     image: nw1,
     link: '/projects/newtitans',
   },
@@ -56,7 +59,6 @@ onMounted(() => {
       </header>
     </div>
 
-    <!-- Sección de Proyectos -->
     <section class="section projects scroll-fade">
       <h2 class="section-title">Proyectos</h2>
       <div class="projects-grid">
@@ -68,13 +70,16 @@ onMounted(() => {
           <img :src="project.image" :alt="project.title" class="project-img" />
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
-          <router-link :to="project.link" class="btn">
-          🔗 Ver proyecto
-        </router-link>
 
+          <p class="project-type" v-if="project.type">{{ project.type }}</p>
+
+          <router-link :to="project.link" class="btn">
+            🔗 Ver proyecto
+          </router-link>
         </div>
       </div>
     </section>
+
     <footer class="footer scroll-fade">
       <p>© 2025 Miriam Durán Reyes. Todos los derechos reservados.</p>
     </footer>
@@ -92,6 +97,7 @@ onMounted(() => {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
   transition: filter 0.3s ease;
 }
+
 
 .project-img:hover {
   filter: brightness(1.05);
