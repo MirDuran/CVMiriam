@@ -23,7 +23,7 @@
 
 <script setup>
 import cvImage from '@/assets/cvMD.jpg';
-import cvFile from '@/assets/Currículum_MIRIAM_DURAN_DAW.pdf';
+import cvFile from '@/assets/Miriam-Duran-30-3-26_2.pdf';
 import '@/assets/styles/home.css';
 import '@/assets/styles/projects.css';
 </script>
